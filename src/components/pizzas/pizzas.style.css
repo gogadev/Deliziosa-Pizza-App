@@ -1,0 +1,50 @@
+.pizzas {
+  width: 90vw;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.main-title {
+  letter-spacing: 6px;
+  color: rgb(131, 32, 32);
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.img {
+  width: 80%;
+  height: 250px;
+  outline: 1px solid lightgrey;
+  outline-offset: -3px;
+  margin: 0.5rem auto;
+}
+
+.image {
+  width: 13%;
+}
+
+.btn {
+  padding: 0.1rem;
+  width: 80%;
+  font-size: 1.1rem;
+  margin: 0.4rem auto;
+  color: rgb(131, 32, 32);
+  letter-spacing: 5px;
+  background: #f6f6f6;
+  border: 4px double lightgrey;
+  cursor: pointer;
+}
+
+.underline {
+  margin: 0.3rem auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .pizzas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Menu from "./pages/menu/Menu";
+import pizzaAPI from "./data/api";
+
+import "./App.css";
+
+//https://codesandbox.io/s/vVoQVk78?file=/api.js:164-721
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      pizzas: pizzaAPI,
+    };
+  }
+
+  render() {
+    const { pizzas } = this.state;
+    return (
+      <React.Fragment>
+        <Menu pizzas={pizzas} />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

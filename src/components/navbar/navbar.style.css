@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 0 auto;
+  background: #f6f6f6;
+  text-align: center;
+  border-bottom: 2px solid #ededed;
+}
+
+.title {
+  margin: 4rem;
+  letter-spacing: 25px;
+  color: brown;
+  font-size: 2.6rem;
+  font-family: "Allura", cursive;
+  font-weight: 200;
+}
+
+.span {
+  font-size: 3rem;
+}
+
+.list li {
+  border: 4px double lightgrey;
+  letter-spacing: 8px;
+  padding: 0.2rem 0.5rem;
+}
+
+.list li span {
+  font-family: "Allura", cursive;
+  font-size: 1.3rem;
+}
+
+.list {
+  margin: 3rem 10rem;
+}
+
+.list li {
+  margin: 0 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    display: grid;
+  }
+  .title {
+    letter-spacing: 15px;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  nav {
+    display: grid;
+  }
+  .title {
+    margin: 1rem;
+  }
+}

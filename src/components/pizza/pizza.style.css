@@ -1,0 +1,46 @@
+.pizza {
+  width: 80vw;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.details {
+  background: whitesmoke;
+  width: 50%;
+}
+
+.m {
+  margin: 1.5rem auto;
+}
+
+.content {
+  width: 50%;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+}
+
+.pizza-img {
+  width: 50%;
+  outline: 1px solid lightgrey;
+  outline-offset: -4px;
+  margin: 0.5rem auto;
+}
+
+.button {
+  width: 10vw;
+  margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .pizza-img,
+  .details,
+  .button {
+    width: 100%;
+  }
+}
