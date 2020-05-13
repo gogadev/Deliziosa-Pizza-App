@@ -5,8 +5,6 @@ import pizzaAPI from "./data/api";
 
 import "./App.css";
 
-//https://codesandbox.io/s/vVoQVk78?file=/api.js:164-721
-
 class App extends Component {
   constructor(props) {
     super(props);
